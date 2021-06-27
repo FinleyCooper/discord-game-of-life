@@ -1,3 +1,4 @@
+require("dotenv").config();
 const boards = require("./boards");
 const Discord = require("discord.js");
 const client = new Discord.Client();
@@ -98,4 +99,4 @@ function tickBoard(board) {
     return [].concat(...B);
 };
 
-client.login("ODU4NzAyNjI5MTE4Mjc5Njkw.YNh_JA.LiHHQVVr6U8v393__fxKHY2ep0o")
+client.login(process.env.BOT_TOKEN)
