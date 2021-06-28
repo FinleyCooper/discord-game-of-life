@@ -3,7 +3,7 @@ const boards = require("./boards");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const MAX_GENS = 30
+const MAX_GENS = 100
 const genDelay = t => new Promise(resolve => setTimeout(resolve, t))
 
 let runningGames = []
